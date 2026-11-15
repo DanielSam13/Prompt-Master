@@ -1,0 +1,1 @@
+{ "name": "prompt-master", "version": "0.1.0", "description": "Reescreve seu prompt para ficar mais claro e completo antes de enviar, com um botão Prompt Master junto à caixa de entrada.", "types": "./types/index.d.ts", "license": "MIT" }
