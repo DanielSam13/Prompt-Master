@@ -1,4 +1,4 @@
-# Prompt Master
+# Prompt-Master
 
 Mod do Claude Code que reescreve seu prompt antes de enviá-lo, deixando-o mais claro,
 específico e completo (objetivo, contexto, restrições e critério de pronto), sem inventar requisitos
@@ -18,7 +18,7 @@ A reescrita usa o modelo `haiku` e é cobrada nas credenciais da sessão.
 No prompt de uma sessão do Claude Code no terminal:
 
 ```
-/plugin install prompt-master --marketplace DanielSam13/prompt-master
+/plugin install prompt-master --marketplace DanielSam13/Prompt-Master
 ```
 
 Responda `y` para adicionar o marketplace e escolha o escopo (Enter para o de usuário).
@@ -26,9 +26,9 @@ Responda `y` para adicionar o marketplace e escolha o escopo (Enter para o de us
 Pelo shell:
 
 ```bash
-claude plugin install prompt-master --marketplace DanielSam13/prompt-master
+claude plugin install prompt-master --marketplace DanielSam13/Prompt-Master
 ```
 
-No app desktop, onde `/plugin` não roda: clique em **+** ao lado da caixa de prompt, depois **Plugins**, **Add marketplace** com `DanielSam13/prompt-master` e então **Add plugin**.
+No app desktop, onde `/plugin` não roda: clique em **+** ao lado da caixa de prompt, depois **Plugins**, **Add marketplace** com `DanielSam13/Prompt-Master` e então **Add plugin**.
 
 O mod não tem dependências para instalar: é um único módulo de hooks carregado pelo próprio Claude Code.
