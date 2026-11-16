@@ -56,11 +56,18 @@ export const register: Register = on => {
         $.ui.toast('Prompt Master: não consegui reescrever, enviei o original.')
         return next(e)
       }
-      return next({ ...e, text: better }).catch(() => next(e))
+      return next({ ...e, text: better })
     } finally {
       $.ui.status(undefined)
       await update($, isBusy, () => false)
     }
+  }).catch(async ($, e, next) => {
+    // Se o hook falhar ou estourar o tempo (ex.: o modelo demorou), o prompt
+    // não pode se perder: envia o original, ou repete o que já foi enviado.
+    $.ui.status(undefined)
+    await update($, isBusy, () => false)
+    if (!next.called) $.ui.toast('Prompt Master: falhou, enviei o prompt original.')
+    return next(e)
   })
 
   // O botão "Prompt Master" junto à caixa de entrada.

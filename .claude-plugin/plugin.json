@@ -1,1 +1,9 @@
-{ "name": "prompt-master", "version": "0.1.0", "description": "Reescreve seu prompt para ficar mais claro e completo antes de enviar, com um botão Prompt Master junto à caixa de entrada.", "types": "./types/index.d.ts", "license": "MIT" }
+{
+  "name": "prompt-master",
+  "version": "0.1.0",
+  "description": "Reescreve seu prompt para ficar mais claro e completo antes de enviar, com um botão Prompt Master junto à caixa de entrada.",
+  "author": { "name": "DanielSam13", "url": "https://github.com/DanielSam13" },
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
+  "types": "./types/index.d.ts"
+}

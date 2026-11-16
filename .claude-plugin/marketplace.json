@@ -1,5 +1,6 @@
 {
   "name": "prompt-master",
+  "description": "Marketplace do Prompt-Master: mod do Claude Code que reescreve seus prompts antes de enviar.",
   "owner": { "name": "DanielSam13" },
   "plugins": [{ "name": "prompt-master", "source": "./" }]
 }
